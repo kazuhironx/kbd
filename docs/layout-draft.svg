@@ -1,24 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1360" height="730" viewBox="0 0 366 190">
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="730" viewBox="0 0 376 190">
   <title>kazuhironx split 60 layout draft</title>
   <style>
     .bg { fill: #f7f4ee; }
     .key { fill: #2f3a40; stroke: #111820; stroke-width: 0.45; rx: 1.4; }
     .inner { fill: #6b4f83; }
     .candidate { fill: #315f7d; }
+    .symbol { fill: #80613a; }
     .primary { fill: #486541; }
     .option { fill: #71664b; }
     .label { fill: #ffffff; font: 4.1px sans-serif; text-anchor: middle; dominant-baseline: middle; }
     .small { font-size: 3.35px; }
     .note { fill: #2d2d2d; font: 4px sans-serif; }
     .guide { stroke: #c9c1b4; stroke-width: 0.3; stroke-dasharray: 1.2 1.2; }
-    .mirror { stroke: #b5aa9b; stroke-width: 0.35; }
     .dim { fill: #786f65; font: 3.5px sans-serif; }
   </style>
-  <rect class="bg" x="0" y="0" width="366" height="190"/>
-  <text class="note" x="20" y="14">Split 60 draft: 2u thumb Ctrl and 2u Space are mirrored; thumb keys are rotated in a Corne-like fan.</text>
+  <rect class="bg" x="0" y="0" width="376" height="190"/>
+  <text class="note" x="20" y="14">Split 60 draft: -/+ move to T/Y inner keys; 2u thumb Ctrl and 2u Space stay mirrored.</text>
   <line class="guide" x1="184" y1="23" x2="184" y2="172"/>
   <text class="dim" x="175" y="21">mirror / split</text>
-  <text class="dim" x="20" y="176">Purple: [ ] inner index keys / Green: daily thumb keys / Olive: optional symbol/Fn keys / Blue: 1.5u outer keys</text>
+  <text class="dim" x="20" y="176">Purple: [ ] inner index keys / Amber: - + T/Y inner keys / Green: daily thumb keys / Olive: Fn</text>
   <rect class="key" x="28.00" y="37.00" width="18.00" height="18.00"/>
   <text class="label" x="37.00" y="46.00">Esc</text>
   <rect class="key" x="47.00" y="33.00" width="18.00" height="18.00"/>
@@ -43,6 +43,8 @@
   <text class="label" x="113.00" y="63.00">R</text>
   <rect class="key" x="123.00" y="57.00" width="18.00" height="18.00"/>
   <text class="label" x="132.00" y="66.00">T</text>
+  <rect class="key symbol" x="142.00" y="57.00" width="18.00" height="18.00"/>
+  <text class="label" x="151.00" y="66.00">-</text>
   <rect class="key candidate" x="18.50" y="75.00" width="27.50" height="18.00"/>
   <text class="label" x="32.25" y="84.00">Ctrl</text>
   <rect class="key" x="47.00" y="71.00" width="18.00" height="18.00"/>
@@ -69,56 +71,58 @@
   <text class="label" x="113.00" y="101.00">V</text>
   <rect class="key" x="123.00" y="95.00" width="18.00" height="18.00"/>
   <text class="label" x="132.00" y="104.00">B</text>
-  <rect class="key" x="227.00" y="37.00" width="18.00" height="18.00"/>
-  <text class="label" x="236.00" y="46.00">6</text>
-  <rect class="key" x="246.00" y="33.00" width="18.00" height="18.00"/>
-  <text class="label" x="255.00" y="42.00">7</text>
-  <rect class="key" x="265.00" y="30.00" width="18.00" height="18.00"/>
-  <text class="label" x="274.00" y="39.00">8</text>
-  <rect class="key" x="284.00" y="32.00" width="18.00" height="18.00"/>
-  <text class="label" x="293.00" y="41.00">9</text>
-  <rect class="key" x="303.00" y="35.00" width="18.00" height="18.00"/>
-  <text class="label" x="312.00" y="44.00">0</text>
-  <rect class="key" x="322.00" y="38.00" width="18.00" height="18.00"/>
-  <text class="label" x="331.00" y="47.00">`</text>
-  <rect class="key" x="227.00" y="56.00" width="18.00" height="18.00"/>
-  <text class="label" x="236.00" y="65.00">Y</text>
-  <rect class="key" x="246.00" y="52.00" width="18.00" height="18.00"/>
-  <text class="label" x="255.00" y="61.00">U</text>
-  <rect class="key" x="265.00" y="49.00" width="18.00" height="18.00"/>
-  <text class="label" x="274.00" y="58.00">I</text>
-  <rect class="key" x="284.00" y="51.00" width="18.00" height="18.00"/>
-  <text class="label" x="293.00" y="60.00">O</text>
-  <rect class="key" x="303.00" y="54.00" width="18.00" height="18.00"/>
-  <text class="label" x="312.00" y="63.00">P</text>
-  <rect class="key" x="322.00" y="57.00" width="18.00" height="18.00"/>
-  <text class="label" x="331.00" y="66.00">Bspc</text>
-  <rect class="key inner" x="208.00" y="75.00" width="18.00" height="18.00"/>
-  <text class="label" x="217.00" y="84.00">]</text>
-  <rect class="key" x="227.00" y="75.00" width="18.00" height="18.00"/>
-  <text class="label" x="236.00" y="84.00">H</text>
-  <rect class="key" x="246.00" y="71.00" width="18.00" height="18.00"/>
-  <text class="label" x="255.00" y="80.00">J</text>
-  <rect class="key" x="265.00" y="68.00" width="18.00" height="18.00"/>
-  <text class="label" x="274.00" y="77.00">K</text>
-  <rect class="key" x="284.00" y="70.00" width="18.00" height="18.00"/>
-  <text class="label" x="293.00" y="79.00">L</text>
-  <rect class="key" x="303.00" y="73.00" width="18.00" height="18.00"/>
-  <text class="label" x="312.00" y="82.00">;</text>
-  <rect class="key candidate" x="322.00" y="76.00" width="27.50" height="18.00"/>
-  <text class="label small" x="335.75" y="85.00">Enter</text>
-  <rect class="key" x="227.00" y="94.00" width="18.00" height="18.00"/>
-  <text class="label" x="236.00" y="103.00">N</text>
-  <rect class="key" x="246.00" y="90.00" width="18.00" height="18.00"/>
-  <text class="label" x="255.00" y="99.00">M</text>
-  <rect class="key" x="265.00" y="87.00" width="18.00" height="18.00"/>
-  <text class="label" x="274.00" y="96.00">,</text>
-  <rect class="key" x="284.00" y="89.00" width="18.00" height="18.00"/>
-  <text class="label" x="293.00" y="98.00">.</text>
-  <rect class="key" x="303.00" y="92.00" width="18.00" height="18.00"/>
-  <text class="label" x="312.00" y="101.00">/</text>
-  <rect class="key" x="322.00" y="95.00" width="18.00" height="18.00"/>
-  <text class="label" x="331.00" y="104.00">\|</text>
+  <rect class="key" x="246.00" y="37.00" width="18.00" height="18.00"/>
+  <text class="label" x="255.00" y="46.00">6</text>
+  <rect class="key" x="265.00" y="33.00" width="18.00" height="18.00"/>
+  <text class="label" x="274.00" y="42.00">7</text>
+  <rect class="key" x="284.00" y="30.00" width="18.00" height="18.00"/>
+  <text class="label" x="293.00" y="39.00">8</text>
+  <rect class="key" x="303.00" y="32.00" width="18.00" height="18.00"/>
+  <text class="label" x="312.00" y="41.00">9</text>
+  <rect class="key" x="322.00" y="35.00" width="18.00" height="18.00"/>
+  <text class="label" x="331.00" y="44.00">0</text>
+  <rect class="key" x="341.00" y="38.00" width="18.00" height="18.00"/>
+  <text class="label" x="350.00" y="47.00">`</text>
+  <rect class="key symbol" x="227.00" y="56.00" width="18.00" height="18.00"/>
+  <text class="label" x="236.00" y="65.00">+</text>
+  <rect class="key" x="246.00" y="56.00" width="18.00" height="18.00"/>
+  <text class="label" x="255.00" y="65.00">Y</text>
+  <rect class="key" x="265.00" y="52.00" width="18.00" height="18.00"/>
+  <text class="label" x="274.00" y="61.00">U</text>
+  <rect class="key" x="284.00" y="49.00" width="18.00" height="18.00"/>
+  <text class="label" x="293.00" y="58.00">I</text>
+  <rect class="key" x="303.00" y="51.00" width="18.00" height="18.00"/>
+  <text class="label" x="312.00" y="60.00">O</text>
+  <rect class="key" x="322.00" y="54.00" width="18.00" height="18.00"/>
+  <text class="label" x="331.00" y="63.00">P</text>
+  <rect class="key" x="341.00" y="57.00" width="18.00" height="18.00"/>
+  <text class="label" x="350.00" y="66.00">Bspc</text>
+  <rect class="key inner" x="227.00" y="75.00" width="18.00" height="18.00"/>
+  <text class="label" x="236.00" y="84.00">]</text>
+  <rect class="key" x="246.00" y="75.00" width="18.00" height="18.00"/>
+  <text class="label" x="255.00" y="84.00">H</text>
+  <rect class="key" x="265.00" y="71.00" width="18.00" height="18.00"/>
+  <text class="label" x="274.00" y="80.00">J</text>
+  <rect class="key" x="284.00" y="68.00" width="18.00" height="18.00"/>
+  <text class="label" x="293.00" y="77.00">K</text>
+  <rect class="key" x="303.00" y="70.00" width="18.00" height="18.00"/>
+  <text class="label" x="312.00" y="79.00">L</text>
+  <rect class="key" x="322.00" y="73.00" width="18.00" height="18.00"/>
+  <text class="label" x="331.00" y="82.00">;</text>
+  <rect class="key candidate" x="341.00" y="76.00" width="27.50" height="18.00"/>
+  <text class="label small" x="354.75" y="85.00">Enter</text>
+  <rect class="key" x="246.00" y="94.00" width="18.00" height="18.00"/>
+  <text class="label" x="255.00" y="103.00">N</text>
+  <rect class="key" x="265.00" y="90.00" width="18.00" height="18.00"/>
+  <text class="label" x="274.00" y="99.00">M</text>
+  <rect class="key" x="284.00" y="87.00" width="18.00" height="18.00"/>
+  <text class="label" x="293.00" y="96.00">,</text>
+  <rect class="key" x="303.00" y="89.00" width="18.00" height="18.00"/>
+  <text class="label" x="312.00" y="98.00">.</text>
+  <rect class="key" x="322.00" y="92.00" width="18.00" height="18.00"/>
+  <text class="label" x="331.00" y="101.00">/</text>
+  <rect class="key" x="341.00" y="95.00" width="18.00" height="18.00"/>
+  <text class="label" x="350.00" y="104.00">\|</text>
   <g transform="rotate(-12.0 136.75 128.68)">
     <rect class="key primary" x="118.25" y="119.68" width="37.00" height="18.00"/>
     <text class="label" x="136.75" y="128.68">Ctrl</text>
@@ -135,10 +139,6 @@
     <rect class="key option" x="122.05" y="146.28" width="18.00" height="18.00"/>
     <text class="label" x="131.05" y="155.28">Fn</text>
   </g>
-  <g transform="rotate(-22.0 112.05 161.74)">
-    <rect class="key option" x="103.05" y="152.74" width="18.00" height="18.00"/>
-    <text class="label" x="112.05" y="161.74">-</text>
-  </g>
   <g transform="rotate(12.0 231.25 128.68)">
     <rect class="key primary" x="212.75" y="119.68" width="37.00" height="18.00"/>
     <text class="label small" x="231.25" y="128.68">Space</text>
@@ -154,10 +154,6 @@
   <g transform="rotate(18.0 236.95 155.28)">
     <rect class="key option" x="227.95" y="146.28" width="18.00" height="18.00"/>
     <text class="label" x="236.95" y="155.28">Fn</text>
-  </g>
-  <g transform="rotate(22.0 255.95 161.74)">
-    <rect class="key option" x="246.95" y="152.74" width="18.00" height="18.00"/>
-    <text class="label" x="255.95" y="161.74">+</text>
   </g>
   <line class="guide" x1="28.0" y1="164" x2="47.0" y2="164"/>
   <text class="dim" x="32.0" y="162">19mm pitch</text>

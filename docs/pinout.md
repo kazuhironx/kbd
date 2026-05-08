@@ -10,7 +10,7 @@
 
 ## Matrix draft
 
-片手 30 キーを 5 行 x 6 列の matrix に収めます。ホーム段内側の `[` / `]` は row4 col5 を使う想定です。
+片手 30 キーを 5 行 x 6 列の matrix に収めます。T/Y 内側の `-` / `+` は row4 col4、G/H 内側の `[` / `]` は row4 col5 を使う想定です。
 
 ```text
 row0: k00 k01 k02 k03 k04 k05

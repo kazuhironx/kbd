@@ -9,8 +9,8 @@
 - 親指クラスタは Corne 風に斜めへ流し、キー自体も回転させます。常用は片手 3 キーまでにします。
 - 左親指 `Ctrl` と右親指 `Space` はどちらも 2u にして、鏡映対称の位置・角度にします。
 - 左手 `Alt` は `Ctrl+Alt+...` 用に、左親指の常用キーとして押しやすい位置に残します。
-- `-` と `+` は親指クラスタ下段のオプション枠に置き、60キーのまま維持します。
-- 下段は `Super` をやめて、`-` / `+` と `Fn` にします。
+- `-` と `+` は T/Y の内側に置き、60キーのまま維持します。
+- 親指クラスタ下段は `Fn` だけ残します。
 
 ## 物理配置ラフ
 
@@ -18,12 +18,12 @@
 Left half                               Right half
 
 Esc   1   2   3   4   5                 6   7   8   9   0   `
- Tab  Q   W   E   R   T                 Y   U   I   O   P   Bspc
+ Tab  Q   W   E   R   T   -         +   Y   U   I   O   P   Bspc
  Ctrl A   S   D   F   G   [         ]   H   J   K   L   ;   Enter
 Shift Z   X   C   V   B                 N   M   ,   .   /   \|
 
              Alt Lower Ctrl(2u)        Space(2u) Raise Enter
-                - Fn                   Fn       +
+                    Fn                 Fn
 ```
 
 ## 差し替え候補
