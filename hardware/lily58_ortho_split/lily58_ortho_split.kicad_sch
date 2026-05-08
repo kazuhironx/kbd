@@ -1,0 +1,9 @@
+(kicad_sch (version 20230121) (generator "codex")
+  (uuid 00000000-0000-0000-0000-000000000000)
+  (paper "A4")
+  (title_block
+    (title "lily58_ortho_split")
+    (comment 1 "58-key split keyboard, Pro Micro compatible, TRRS, MX hotswap")
+    (comment 2 "Initial schematic placeholder")
+  )
+)

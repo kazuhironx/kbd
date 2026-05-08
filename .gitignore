@@ -1,0 +1,21 @@
+# KiCad
+*.bak
+*.kicad_prl
+*.kicad_pcb-bak
+fp-info-cache
+*-backups/
+
+# QMK / build artifacts
+.build/
+*.hex
+*.bin
+*.uf2
+*.elf
+*.map
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*~
+.#*
+.vscode/
