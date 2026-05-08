@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1220" height="520" viewBox="0 0 330 140">
+  <title>kazuhironx lily58 ortho split layout draft</title>
+  <style>
+    .bg { fill: #f7f4ee; }
+    .key { fill: #2f3a40; stroke: #111820; stroke-width: 0.45; rx: 1.4; }
+    .candidate { fill: #315f7d; }
+    .thumb { fill: #486541; }
+    .label { fill: #ffffff; font: 4.1px sans-serif; text-anchor: middle; dominant-baseline: middle; }
+    .small { font-size: 3.4px; }
+    .note { fill: #2d2d2d; font: 4px sans-serif; }
+    .guide { stroke: #c9c1b4; stroke-width: 0.3; stroke-dasharray: 1.2 1.2; }
+    .dim { fill: #786f65; font: 3.5px sans-serif; }
+  </style>
+  <rect class="bg" x="0" y="0" width="330" height="140"/>
+  <text class="note" x="20" y="14">Layout draft: 1u = 19mm pitch / keycap body ~= 18mm. Column stagger is visual draft, not final PCB coordinates.</text>
+  <line class="guide" x1="160" y1="23" x2="160" y2="126"/>
+  <text class="dim" x="152" y="21">split gap</text>
+  <text class="dim" x="20" y="126">Blue: 1.5u candidate / Green: thumb cluster / Space: 2u candidate</text>
+  <rect class="key" x="20.00" y="37.00" width="18.00" height="18"/>
+  <text class="label" x="29.00" y="46.00">Esc</text>
+  <rect class="key" x="39.00" y="33.00" width="18.00" height="18"/>
+  <text class="label" x="48.00" y="42.00">1</text>
+  <rect class="key" x="58.00" y="30.00" width="18.00" height="18"/>
+  <text class="label" x="67.00" y="39.00">2</text>
+  <rect class="key" x="77.00" y="32.00" width="18.00" height="18"/>
+  <text class="label" x="86.00" y="41.00">3</text>
+  <rect class="key" x="96.00" y="35.00" width="18.00" height="18"/>
+  <text class="label" x="105.00" y="44.00">4</text>
+  <rect class="key" x="115.00" y="38.00" width="18.00" height="18"/>
+  <text class="label" x="124.00" y="47.00">5</text>
+  <rect class="key" x="20.00" y="56.00" width="18.00" height="18"/>
+  <text class="label" x="29.00" y="65.00">Tab</text>
+  <rect class="key" x="39.00" y="52.00" width="18.00" height="18"/>
+  <text class="label" x="48.00" y="61.00">Q</text>
+  <rect class="key" x="58.00" y="49.00" width="18.00" height="18"/>
+  <text class="label" x="67.00" y="58.00">W</text>
+  <rect class="key" x="77.00" y="51.00" width="18.00" height="18"/>
+  <text class="label" x="86.00" y="60.00">E</text>
+  <rect class="key" x="96.00" y="54.00" width="18.00" height="18"/>
+  <text class="label" x="105.00" y="63.00">R</text>
+  <rect class="key" x="115.00" y="57.00" width="18.00" height="18"/>
+  <text class="label" x="124.00" y="66.00">T</text>
+  <rect class="key candidate" x="20.00" y="75.00" width="27.50" height="18"/>
+  <text class="label" x="33.75" y="84.00">Ctrl</text>
+  <rect class="key" x="39.00" y="71.00" width="18.00" height="18"/>
+  <text class="label" x="48.00" y="80.00">A</text>
+  <rect class="key" x="58.00" y="68.00" width="18.00" height="18"/>
+  <text class="label" x="67.00" y="77.00">S</text>
+  <rect class="key" x="77.00" y="70.00" width="18.00" height="18"/>
+  <text class="label" x="86.00" y="79.00">D</text>
+  <rect class="key" x="96.00" y="73.00" width="18.00" height="18"/>
+  <text class="label" x="105.00" y="82.00">F</text>
+  <rect class="key" x="115.00" y="76.00" width="18.00" height="18"/>
+  <text class="label" x="124.00" y="85.00">G</text>
+  <rect class="key" x="20.00" y="94.00" width="18.00" height="18"/>
+  <text class="label small" x="29.00" y="103.00">Shift</text>
+  <rect class="key" x="39.00" y="90.00" width="18.00" height="18"/>
+  <text class="label" x="48.00" y="99.00">Z</text>
+  <rect class="key" x="58.00" y="87.00" width="18.00" height="18"/>
+  <text class="label" x="67.00" y="96.00">X</text>
+  <rect class="key" x="77.00" y="89.00" width="18.00" height="18"/>
+  <text class="label" x="86.00" y="98.00">C</text>
+  <rect class="key" x="96.00" y="92.00" width="18.00" height="18"/>
+  <text class="label" x="105.00" y="101.00">V</text>
+  <rect class="key" x="115.00" y="95.00" width="18.00" height="18"/>
+  <text class="label" x="124.00" y="104.00">B</text>
+  <rect class="key" x="190.00" y="37.00" width="18.00" height="18"/>
+  <text class="label" x="199.00" y="46.00">6</text>
+  <rect class="key" x="209.00" y="33.00" width="18.00" height="18"/>
+  <text class="label" x="218.00" y="42.00">7</text>
+  <rect class="key" x="228.00" y="30.00" width="18.00" height="18"/>
+  <text class="label" x="237.00" y="39.00">8</text>
+  <rect class="key" x="247.00" y="32.00" width="18.00" height="18"/>
+  <text class="label" x="256.00" y="41.00">9</text>
+  <rect class="key" x="266.00" y="35.00" width="18.00" height="18"/>
+  <text class="label" x="275.00" y="44.00">0</text>
+  <rect class="key" x="285.00" y="38.00" width="18.00" height="18"/>
+  <text class="label" x="294.00" y="47.00">`</text>
+  <rect class="key" x="190.00" y="56.00" width="18.00" height="18"/>
+  <text class="label" x="199.00" y="65.00">Y</text>
+  <rect class="key" x="209.00" y="52.00" width="18.00" height="18"/>
+  <text class="label" x="218.00" y="61.00">U</text>
+  <rect class="key" x="228.00" y="49.00" width="18.00" height="18"/>
+  <text class="label" x="237.00" y="58.00">I</text>
+  <rect class="key" x="247.00" y="51.00" width="18.00" height="18"/>
+  <text class="label" x="256.00" y="60.00">O</text>
+  <rect class="key" x="266.00" y="54.00" width="18.00" height="18"/>
+  <text class="label" x="275.00" y="63.00">P</text>
+  <rect class="key" x="285.00" y="57.00" width="18.00" height="18"/>
+  <text class="label" x="294.00" y="66.00">Bspc</text>
+  <rect class="key" x="190.00" y="75.00" width="18.00" height="18"/>
+  <text class="label" x="199.00" y="84.00">H</text>
+  <rect class="key" x="209.00" y="71.00" width="18.00" height="18"/>
+  <text class="label" x="218.00" y="80.00">J</text>
+  <rect class="key" x="228.00" y="68.00" width="18.00" height="18"/>
+  <text class="label" x="237.00" y="77.00">K</text>
+  <rect class="key" x="247.00" y="70.00" width="18.00" height="18"/>
+  <text class="label" x="256.00" y="79.00">L</text>
+  <rect class="key" x="266.00" y="73.00" width="18.00" height="18"/>
+  <text class="label" x="275.00" y="82.00">;</text>
+  <rect class="key candidate" x="285.00" y="76.00" width="27.50" height="18"/>
+  <text class="label small" x="298.75" y="85.00">Enter</text>
+  <rect class="key" x="190.00" y="94.00" width="18.00" height="18"/>
+  <text class="label" x="199.00" y="103.00">N</text>
+  <rect class="key" x="209.00" y="90.00" width="18.00" height="18"/>
+  <text class="label" x="218.00" y="99.00">M</text>
+  <rect class="key" x="228.00" y="87.00" width="18.00" height="18"/>
+  <text class="label" x="237.00" y="96.00">,</text>
+  <rect class="key" x="247.00" y="89.00" width="18.00" height="18"/>
+  <text class="label" x="256.00" y="98.00">.</text>
+  <rect class="key" x="266.00" y="92.00" width="18.00" height="18"/>
+  <text class="label" x="275.00" y="101.00">/</text>
+  <rect class="key" x="285.00" y="95.00" width="18.00" height="18"/>
+  <text class="label" x="294.00" y="104.00">\|</text>
+  <rect class="key thumb" x="58.00" y="110.75" width="18.00" height="18"/>
+  <text class="label" x="67.00" y="119.75">Alt</text>
+  <rect class="key thumb" x="77.00" y="106.95" width="18.00" height="18"/>
+  <text class="label small" x="86.00" y="115.95">Lower</text>
+  <rect class="key candidate thumb" x="96.00" y="110.75" width="27.50" height="18"/>
+  <text class="label" x="109.75" y="119.75">Ctrl</text>
+  <rect class="key thumb" x="77.00" y="125.95" width="18.00" height="18"/>
+  <text class="label small" x="86.00" y="134.95">AUX_L1</text>
+  <rect class="key thumb" x="96.00" y="127.85" width="18.00" height="18"/>
+  <text class="label small" x="105.00" y="136.85">AUX_L2</text>
+  <rect class="key thumb" x="190.00" y="110.75" width="37.00" height="18"/>
+  <text class="label small" x="208.50" y="119.75">Space</text>
+  <rect class="key thumb" x="230.85" y="106.95" width="18.00" height="18"/>
+  <text class="label small" x="239.85" y="115.95">Raise</text>
+  <rect class="key candidate thumb" x="249.85" y="110.75" width="27.50" height="18"/>
+  <text class="label small" x="263.60" y="119.75">Enter</text>
+  <rect class="key thumb" x="199.50" y="127.85" width="18.00" height="18"/>
+  <text class="label small" x="208.50" y="136.85">AUX_R1</text>
+  <rect class="key thumb" x="218.50" y="125.95" width="18.00" height="18"/>
+  <text class="label small" x="227.50" y="134.95">AUX_R2</text>
+  <line class="guide" x1="20" y1="118" x2="39" y2="118"/>
+  <text class="dim" x="24" y="116">19mm pitch</text>
+  <line class="guide" x1="190" y1="118" x2="228" y2="118"/>
+  <text class="dim" x="198" y="116">2u candidate</text>
+</svg>

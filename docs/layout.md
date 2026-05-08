@@ -8,6 +8,10 @@ Lily58 に近い 58 キー構成です。左右それぞれ 29 キー、合計 5
 
 ## Base layer
 
+図面ラフ:
+
+![layout draft](layout-draft.svg)
+
 ```text
 Left                                      Right
 
