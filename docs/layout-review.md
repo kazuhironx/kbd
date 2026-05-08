@@ -4,18 +4,19 @@
 
 - `Space` は右親指の 2u 候補です。
 - `Ctrl` と `Enter` は 1.5u 候補ですが、手持ちキーキャップの高さ確認後に 1u へ戻せる扱いにしています。
-- `[` と `]` は Base layer には置かず、Lower / Raise layer に逃がします。
+- `[` と `]` は Base layer の G/H 内側に置き、人差し指で押す記号キーにします。
 - 追加 4 キーは `AUX_L1`, `AUX_L2`, `AUX_R1`, `AUX_R2` として残し、初期キーマップでは `KC_NO` にしています。
+- 合計キー数は 58 から 60 に変更します。
 
 ## 物理配置ラフ
 
 ```text
 Left half                               Right half
 
-Esc   1   2   3   4   5                6   7   8   9   0   `
- Tab  Q   W   E   R   T                Y   U   I   O   P   Bspc
- Ctrl A   S   D   F   G                H   J   K   L   ;   Enter
-Shift Z   X   C   V   B                N   M   ,   .   /   \|
+Esc   1   2   3   4   5                 6   7   8   9   0   `
+ Tab  Q   W   E   R   T                 Y   U   I   O   P   Bspc
+ Ctrl A   S   D   F   G   [         ]   H   J   K   L   ;   Enter
+Shift Z   X   C   V   B                 N   M   ,   .   /   \|
 
              Alt Lower Ctrl            Space(2u) Raise Enter
                 AUX_L1 AUX_L2          AUX_R1    AUX_R2

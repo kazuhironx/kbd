@@ -2,11 +2,11 @@
 
 自作キーボード設計用のリポジトリです。
 
-最初の対象は、Lily58 に近い 58 キーの左右分割キーボードです。HHKB US 配列に慣れた Emacs 利用を前提に、column staggered の分割配列と、手持ちの ortho 系キーキャップを活かす設計にします。
+最初の対象は、Lily58 系より少しだけ記号に強い 60 キーの左右分割キーボードです。HHKB US 配列に慣れた Emacs 利用を前提に、column staggered の分割配列と、手持ちの ortho 系キーキャップを活かす設計にします。
 
 ## 方針
 
-- 左右分割、片手 29 キー、合計 58 キー
+- 左右分割、片手 30 キー、合計 60 キー
 - 有線 USB 接続
 - 左右間接続は TRRS
 - Pro Micro 互換コントローラ
@@ -14,12 +14,13 @@
 - LED、OLED、ロータリーエンコーダ、無線、電池は v1 では入れない
 - `Space` は 2u キーキャップの優先候補
 - `Ctrl` と `Enter` は 1u / 1.5u の差し替え候補として扱い、キーキャップ高さ確認後に確定する
+- `[` と `]` は G/H の内側人差し指キーとして Base layer に置く
 
 ## ディレクトリ
 
 - `docs/`: レイアウト、キーキャップ、ピン割り当ての設計メモ
-- `hardware/lily58_ortho_split/`: KiCad プロジェクト
-- `firmware/qmk/kazuhironx_lily58_ortho/`: QMK キーボード定義の雛形
+- `hardware/split60_ortho/`: KiCad プロジェクト
+- `firmware/qmk/kazuhironx_split60_ortho/`: QMK キーボード定義の雛形
 
 ## 次の作業
 
