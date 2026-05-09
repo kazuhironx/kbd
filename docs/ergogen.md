@@ -22,6 +22,7 @@ Ergogenを物理レイアウトの一次情報にする。KiCadでは生成さ�
 
 - `thumb.alt`, `thumb.lower`, `thumb.main`, `thumb.fn` の `shift`, `rotate`, `width`
 - `matrix.*.stagger`
+  - 現行は `inner.stagger: -1`。`T/G/B` と `Y/H/N` を下げ、内側人差し指上段の窮屈さを減らす。
 - `outlines._raw` の外形点
 - mounting holes の位置
 

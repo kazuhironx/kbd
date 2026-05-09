@@ -53,7 +53,7 @@ points:
             column_net: C4
         inner:
           key:
-            stagger: 2
+            stagger: -1
             column_net: C5
         symbol:
           key:
