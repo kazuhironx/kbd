@@ -45,19 +45,19 @@ points:
             column_net: C2
         middle:
           key:
-            stagger: 7
+            stagger: 8
             column_net: C3
         index:
           key:
-            stagger: 5
+            stagger: 4
             column_net: C4
         inner:
           key:
-            stagger: -1
+            stagger: -5
             column_net: C5
         symbol:
           key:
-            stagger: 2
+            stagger: -5
             column_net: C4
             shift: [0, 0]
           rows:
@@ -77,7 +77,7 @@ points:
     thumb:
       anchor:
         ref: matrix_index_bottom
-        shift: [7, -24]
+        shift: [7, -28]
       key:
         padding: ky
         spread: kx
@@ -92,14 +92,14 @@ points:
             row_net: R4
             width: 1.5
             rotate: -20
-            shift: [-20, -8]
+            shift: [-21, -9]
         lower:
           key:
             name: thumb_lower
             column_net: C1
             row_net: R4
             rotate: -16
-            shift: [-2, -3]
+            shift: [-3, -4]
         main:
           key:
             name: thumb_ctrl
@@ -107,14 +107,14 @@ points:
             row_net: R4
             width: 2
             rotate: -12
-            shift: [18, 0]
+            shift: [16, -2]
         fn:
           key:
             name: thumb_fn
             column_net: C3
             row_net: R4
             rotate: -18
-            shift: [2, -22]
+            shift: [1, -25]
       rows:
         cluster:
 
@@ -156,11 +156,11 @@ outlines:
         - ref: matrix_symbol_top
           shift: [board_margin + 10, board_margin + 2]
         - ref: thumb_ctrl
-          shift: [board_margin + 26, -board_margin - 20]
+          shift: [board_margin + 36, -board_margin - 30]
         - ref: thumb_fn
-          shift: [board_margin + 8, -board_margin - 12]
+          shift: [board_margin + 18, -board_margin - 26]
         - ref: thumb_alt
-          shift: [-board_margin - 14, -board_margin - 12]
+          shift: [-board_margin - 24, -board_margin - 24]
         - ref: matrix_outer_bottom
           shift: [-board_margin - 8, -board_margin]
       fillet: 8
