@@ -2,15 +2,16 @@
 
 ## 前提
 
-- MCU: Pro Micro 互換
-- 左右間接続: TRRS
-- スイッチ: MX ホットスワップ
+- MCU: Keebio RP2040 Pro Micro 16MB 第一候補
+- footprint: Pro Micro 互換、裏面実装、直ハンダ前提
+- 左右間接続: TRRS または JST を比較、初期生成物は TRRS
+- スイッチ: MX 5-pin direct solder
 - ダイオード: 各スイッチに 1 個
-- キー数: 左右 30 キーずつ、合計 60 キー
+- キー数: 現行 Ergogen 案は左右 31 キーずつ、合計 62 キー
 
 ## Matrix draft
 
-片手 30 キーを 5 行 x 6 列の matrix に収めます。T/Y 内側の `-` / `+` は row4 col4、G/H 内側の `[` / `]` は row4 col5 を使う想定です。
+片手 31 キーを 5 行 x 6 列相当の matrix に収めます。T/Y 内側の `-` / `+` は `matrix_symbol_top`、G/H 内側の `[` / `]` は `matrix_symbol_home` として扱います。親指クラスタは `thumb_alt`, `thumb_lower`, `thumb_ctrl`, `thumb_fn` を独立点名にしています。
 
 ```text
 row0: k00 k01 k02 k03 k04 k05
@@ -20,14 +21,14 @@ row3: k30 k31 k32 k33 k34 k35
 row4: k40 k41 k42 k43 k44 k45
 ```
 
-## Pro Micro pin draft
+## RP2040 pin draft
 
-この表は仮置きです。KiCad 回路図作成時に、実物の Pro Micro 互換ボードと配線しやすさを見て確定します。
+この表は論理net名です。KiCad 回路図作成時に、Keebio RP2040 Pro Micro 16MB の実物ピンと配線しやすさを見てGPIOへ割り当てます。
 
 ```text
-Rows: D1, D0, D4, C6, D7
-Cols: F4, F5, F6, F7, B1, B3
-Serial: D2
+Rows: R0, R1, R2, R3, R4
+Cols: C0, C1, C2, C3, C4, C5
+Split data: TBD
 Reset: RESET pin + tactile switch to GND
 ```
 
@@ -45,5 +46,5 @@ Sleeve: Reserved / no connect
 ## 確認事項
 
 - TRRS の VCC/GND/Serial 割り当てはジャックの実フットプリントで確認する。
-- Pro Micro 互換ボードによりラベルと AVR ピン名が異なるため、QMK 側の指定名と照合する。
+- Pro Micro 互換ボードによりラベルとRP2040 GPIO名が異なるため、QMK 側の指定名と照合する。
 - `DIODE_DIRECTION` は回路図のダイオード向き確定後に固定する。

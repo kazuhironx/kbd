@@ -19,3 +19,7 @@ Thumbs.db
 *~
 .#*
 .vscode/
+
+# Ergogen generated output
+ergogen/output/
+node_modules/

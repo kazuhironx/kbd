@@ -1,0 +1,241 @@
+meta:
+  engine: 4.1.0
+  name: split60_ortho
+  version: 0.1.0
+  author: kazuhironx
+
+units:
+  kx: 19
+  ky: 19
+  cap: 18
+  pad: 3
+  board_margin: 8
+  screw: 2.2
+  screw_radius: 1.1
+  spacer: 4
+
+points:
+  rotate: 0
+  mirror:
+    ref: matrix_inner_home
+    distance: 62
+  zones:
+    matrix:
+      anchor:
+        shift: [0, 0]
+      key:
+        padding: ky
+        spread: kx
+        tags:
+          - key
+      columns:
+        outer:
+          key:
+            column_net: C0
+          rows:
+            mod:
+              width: 1.5
+              shift: [-4.75, 0]
+        pinky:
+          key:
+            column_net: C1
+        ring:
+          key:
+            stagger: 4
+            column_net: C2
+        middle:
+          key:
+            stagger: 7
+            column_net: C3
+        index:
+          key:
+            stagger: 5
+            column_net: C4
+        inner:
+          key:
+            stagger: 2
+            column_net: C5
+        symbol:
+          key:
+            stagger: 2
+            column_net: C4
+            shift: [0, 0]
+          rows:
+            number:
+              skip: true
+            bottom:
+              skip: true
+      rows:
+        bottom:
+          row_net: R3
+        home:
+          row_net: R2
+        top:
+          row_net: R1
+        number:
+          row_net: R0
+    thumb:
+      anchor:
+        ref: matrix_index_bottom
+        shift: [7, -24]
+      key:
+        padding: ky
+        spread: kx
+        tags:
+          - key
+          - thumb
+      columns:
+        alt:
+          key:
+            name: thumb_alt
+            column_net: C0
+            row_net: R4
+            width: 1.5
+            rotate: -20
+            shift: [-20, -8]
+        lower:
+          key:
+            name: thumb_lower
+            column_net: C1
+            row_net: R4
+            rotate: -16
+            shift: [-2, -3]
+        main:
+          key:
+            name: thumb_ctrl
+            column_net: C2
+            row_net: R4
+            width: 2
+            rotate: -12
+            shift: [18, 0]
+        fn:
+          key:
+            name: thumb_fn
+            column_net: C3
+            row_net: R4
+            rotate: -18
+            shift: [2, -22]
+      rows:
+        cluster:
+
+outlines:
+  _keys:
+    - what: rectangle
+      where:
+        - - key
+          - "-/^mirror_/"
+      size: [cap, cap]
+  _switch_cutouts:
+    - what: rectangle
+      where:
+        - - key
+          - "-/^mirror_/"
+      size: [14, 14]
+  _mounting_holes:
+    - what: circle
+      radius: screw_radius
+      where:
+        - ref: matrix_outer_number
+          shift: [-6, 8]
+        - ref: matrix_inner_number
+          shift: [42, 8]
+        - ref: matrix_outer_bottom
+          shift: [-6, -10]
+        - ref: thumb_alt
+          shift: [-14, -16]
+        - ref: thumb_ctrl
+          shift: [32, -18]
+  _raw:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: matrix_outer_number
+          shift: [-board_margin - 8, board_margin + 8]
+        - ref: matrix_inner_number
+          shift: [board_margin + 30, board_margin + 8]
+        - ref: matrix_symbol_top
+          shift: [board_margin + 10, board_margin + 2]
+        - ref: thumb_ctrl
+          shift: [board_margin + 26, -board_margin - 20]
+        - ref: thumb_fn
+          shift: [board_margin + 8, -board_margin - 12]
+        - ref: thumb_alt
+          shift: [-board_margin - 14, -board_margin - 12]
+        - ref: matrix_outer_bottom
+          shift: [-board_margin - 8, -board_margin]
+      fillet: 8
+  board:
+    - what: outline
+      name: _raw
+    - what: outline
+      name: _mounting_holes
+      operation: subtract
+  preview:
+    - what: outline
+      name: board
+    - what: outline
+      name: _keys
+      operation: subtract
+  bottom_plate:
+    - what: outline
+      name: board
+    - what: outline
+      name: _switch_cutouts
+      operation: subtract
+
+pcbs:
+  split60_left:
+    outlines:
+      main:
+        outline: board
+    footprints:
+      mx:
+        what: mx
+        where:
+          - - key
+            - "-/^mirror_/"
+        params:
+          from: "{{column_net}}"
+          to: "{{name}}"
+          keycaps: true
+          reverse: false
+          hotswap: false
+      diode:
+        what: diode
+        where:
+          - - key
+            - "-/^mirror_/"
+        adjust:
+          shift: [0, -5.5]
+          rotate: 180
+        params:
+          from: "{{name}}"
+          to: "{{row_net}}"
+      mcu:
+        what: promicro
+        where:
+          ref: matrix_inner_top
+          shift: [28, -12]
+          rotate: -90
+        params:
+          orientation: down
+      reset:
+        what: button
+        where:
+          ref: matrix_inner_number
+          shift: [28, -5]
+          rotate: 90
+        params:
+          from: RST
+          to: GND
+      split_connector:
+        what: trrs
+        where:
+          ref: matrix_inner_number
+          shift: [32, 12]
+          rotate: 90
+        params:
+          A: VCC
+          B: GND
+          C: P2
+          D: GND

@@ -1,0 +1,13 @@
+{
+  "name": "kazuhironx-split60-ortho",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Ergogen/KiCad source for a split MX/SA ergonomic keyboard.",
+  "scripts": {
+    "ergogen": "ergogen ergogen/config.yaml -o ergogen/output --clean --svg",
+    "clean:ergogen": "rm -rf ergogen/output"
+  },
+  "devDependencies": {
+    "ergogen": "^4.1.0"
+  }
+}
