@@ -53,11 +53,11 @@ points:
             column_net: C4
         inner:
           key:
-            stagger: -5
+            stagger: 0
             column_net: C5
         symbol:
           key:
-            stagger: -5
+            stagger: 0
             column_net: C4
             shift: [0, 0]
           rows:
@@ -76,8 +76,8 @@ points:
           row_net: R0
     thumb:
       anchor:
-        ref: matrix_index_bottom
-        shift: [7, -28]
+        ref: matrix_inner_bottom
+        shift: [8, -22]
       key:
         padding: ky
         spread: kx
@@ -91,30 +91,30 @@ points:
             column_net: C0
             row_net: R4
             width: 1.5
-            rotate: -20
-            shift: [-21, -9]
+            rotate: 0
+            shift: [43, -6]
         lower:
           key:
             name: thumb_lower
             column_net: C1
             row_net: R4
-            rotate: -16
-            shift: [-3, -4]
+            rotate: -10
+            shift: [23, -4]
         main:
           key:
             name: thumb_ctrl
             column_net: C2
             row_net: R4
             width: 2
-            rotate: -12
-            shift: [16, -2]
+            rotate: -17
+            shift: [0, 0]
         fn:
           key:
             name: thumb_fn
             column_net: C3
             row_net: R4
             rotate: -18
-            shift: [1, -25]
+            shift: [23, -25]
       rows:
         cluster:
 
@@ -151,16 +151,24 @@ outlines:
       points:
         - ref: matrix_outer_number
           shift: [-board_margin - 8, board_margin + 8]
+        - ref: matrix_ring_number
+          shift: [0, board_margin + 10]
+        - ref: matrix_middle_number
+          shift: [0, board_margin + 10]
         - ref: matrix_inner_number
-          shift: [board_margin + 30, board_margin + 8]
+          shift: [board_margin + 26, board_margin + 8]
         - ref: matrix_symbol_top
-          shift: [board_margin + 10, board_margin + 2]
-        - ref: thumb_ctrl
-          shift: [board_margin + 36, -board_margin - 30]
-        - ref: thumb_fn
-          shift: [board_margin + 18, -board_margin - 26]
+          shift: [board_margin + 20, board_margin + 4]
         - ref: thumb_alt
-          shift: [-board_margin - 24, -board_margin - 24]
+          shift: [board_margin + 22, -board_margin - 16]
+        - ref: thumb_lower
+          shift: [board_margin + 14, -board_margin - 22]
+        - ref: thumb_fn
+          shift: [board_margin + 8, -board_margin - 24]
+        - ref: thumb_ctrl
+          shift: [-board_margin - 26, -board_margin - 28]
+        - ref: matrix_ring_bottom
+          shift: [0, -board_margin - 8]
         - ref: matrix_outer_bottom
           shift: [-board_margin - 8, -board_margin]
       fillet: 8
