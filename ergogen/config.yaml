@@ -18,7 +18,7 @@ points:
   rotate: 0
   mirror:
     ref: matrix_inner_home
-    distance: 62
+    distance: 96
   zones:
     matrix:
       anchor:
