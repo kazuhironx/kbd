@@ -1288,7 +1288,7 @@
 
         
       (module MX (layer F.Cu) (tedit 5DD4F656)
-      (at 146 12 0)
+      (at 30 30 0)
 
       
       (fp_text reference "S28" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1327,7 +1327,7 @@
 
         
       (module MX (layer F.Cu) (tedit 5DD4F656)
-      (at 145 10 -10)
+      (at 91 26 -45)
 
       
       (fp_text reference "S29" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1366,7 +1366,7 @@
 
         
       (module MX (layer F.Cu) (tedit 5DD4F656)
-      (at 141 6 -17)
+      (at 150 22 -45)
 
       
       (fp_text reference "S30" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1405,7 +1405,7 @@
 
         
       (module MX (layer F.Cu) (tedit 5DD4F656)
-      (at 183 31 -18)
+      (at 0 30 0)
 
       
       (fp_text reference "S31" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -2499,7 +2499,7 @@
     (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
 
 
-        (at 146 17.5 180)
+        (at 30 35.5 180)
 
         
         (fp_text reference "D28" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -2538,7 +2538,7 @@
     (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
 
 
-        (at 144.044935 15.4164426 170)
+        (at 87.1109127 29.8890873 135)
 
         
         (fp_text reference "D29" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -2561,14 +2561,14 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 170) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 42 "R4"))
-        (pad 2 smd rect (at 1.65 0 170) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 35 "thumb_lower"))
-        (pad 1 smd rect (at -1.65 0 170) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 42 "R4"))
-        (pad 2 smd rect (at 1.65 0 170) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 35 "thumb_lower"))
+        (pad 1 smd rect (at -1.65 0 135) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 42 "R4"))
+        (pad 2 smd rect (at 1.65 0 135) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 35 "thumb_lower"))
+        (pad 1 smd rect (at -1.65 0 135) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 42 "R4"))
+        (pad 2 smd rect (at 1.65 0 135) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 35 "thumb_lower"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 170) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 42 "R4"))
-        (pad 2 thru_hole circle (at 3.81 0 170) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 35 "thumb_lower"))
+        (pad 1 thru_hole rect (at -3.81 0 135) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 42 "R4"))
+        (pad 2 thru_hole circle (at 3.81 0 135) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 35 "thumb_lower"))
     )
   
     
@@ -2577,7 +2577,7 @@
     (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
 
 
-        (at 139.3919556 11.259676200000001 163)
+        (at 146.1109127 25.8890873 135)
 
         
         (fp_text reference "D30" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -2600,14 +2600,14 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 163) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 42 "R4"))
-        (pad 2 smd rect (at 1.65 0 163) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 36 "thumb_ctrl"))
-        (pad 1 smd rect (at -1.65 0 163) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 42 "R4"))
-        (pad 2 smd rect (at 1.65 0 163) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 36 "thumb_ctrl"))
+        (pad 1 smd rect (at -1.65 0 135) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 42 "R4"))
+        (pad 2 smd rect (at 1.65 0 135) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 36 "thumb_ctrl"))
+        (pad 1 smd rect (at -1.65 0 135) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 42 "R4"))
+        (pad 2 smd rect (at 1.65 0 135) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 36 "thumb_ctrl"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 163) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 42 "R4"))
-        (pad 2 thru_hole circle (at 3.81 0 163) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 36 "thumb_ctrl"))
+        (pad 1 thru_hole rect (at -3.81 0 135) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 42 "R4"))
+        (pad 2 thru_hole circle (at 3.81 0 135) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 36 "thumb_ctrl"))
     )
   
     
@@ -2616,7 +2616,7 @@
     (module ComboDiode (layer F.Cu) (tedit 5B24D78E)
 
 
-        (at 181.3004065 36.2308108 162)
+        (at 0 35.5 180)
 
         
         (fp_text reference "D31" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -2639,14 +2639,14 @@
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
     
         
-        (pad 1 smd rect (at -1.65 0 162) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 42 "R4"))
-        (pad 2 smd rect (at 1.65 0 162) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 37 "thumb_fn"))
-        (pad 1 smd rect (at -1.65 0 162) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 42 "R4"))
-        (pad 2 smd rect (at 1.65 0 162) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 37 "thumb_fn"))
+        (pad 1 smd rect (at -1.65 0 180) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 42 "R4"))
+        (pad 2 smd rect (at 1.65 0 180) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 37 "thumb_fn"))
+        (pad 1 smd rect (at -1.65 0 180) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 42 "R4"))
+        (pad 2 smd rect (at 1.65 0 180) (size 0.9 1.2) (layers F.Cu F.Paste F.Mask) (net 37 "thumb_fn"))
         
         
-        (pad 1 thru_hole rect (at -3.81 0 162) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 42 "R4"))
-        (pad 2 thru_hole circle (at 3.81 0 162) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 37 "thumb_fn"))
+        (pad 1 thru_hole rect (at -3.81 0 180) (size 1.778 1.778) (drill 0.9906) (layers *.Cu *.Mask) (net 42 "R4"))
+        (pad 2 thru_hole circle (at 3.81 0 180) (size 1.905 1.905) (drill 0.9906) (layers *.Cu *.Mask) (net 37 "thumb_fn"))
     )
   
     
@@ -2793,27 +2793,26 @@
         (pad 4 thru_hole oval (at 0 3.2 90) (size 1.6 2.2) (drill oval 0.9 1.5) (layers *.Cu *.Mask) (net 44 "GND"))
       )
       
-  (gr_line (start -16 0.5706747777777776) (end -16 -65.83965763333335) (angle 90) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start -16 13.580107499999997) (end -16 -65.83965763333335) (angle 90) (layer Edge.Cuts) (width 0.15))
 (gr_line (start -8.883452035365853 -73.790727551626) (end 36.847612784422466 -78.87195697604695) (angle 90) (layer Edge.Cuts) (width 0.15))
 (gr_line (start 39.068616677527245 -79.44994386422199) (end 55.61733356186391 -86.41782465762691) (angle 90) (layer Edge.Cuts) (width 0.15))
 (gr_line (start 58.49965268501455 -87.0416570190282) (end 124.18401486566688 -88.86622263515741) (angle 90) (layer Edge.Cuts) (width 0.15))
-(gr_line (start 131.3706541698408 -84.80576569951242) (end 141.61954253010381 -66.67311706212399) (angle 90) (layer Edge.Cuts) (width 0.15))
-(gr_line (start 142.24450634124997 -65.26648097625008) (end 173.81713936292385 29.45141808877156) (angle 90) (layer Edge.Cuts) (width 0.15))
-(gr_line (start 169.8417112707903 39.11837769908739) (end 161.4563252 43.3644925) (angle 90) (layer Edge.Cuts) (width 0.15))
-(gr_line (start 161.4563252 43.3644925) (end 188.3283604 66.3780804) (angle 90) (layer Edge.Cuts) (width 0.15))
-(gr_line (start 188.3283604 66.3780804) (end 98.25410735833204 30.603042691114666) (angle 90) (layer Edge.Cuts) (width 0.15))
-(gr_line (start 97.65811057569269 30.393178634805185) (end 38.86417776002441 12.26643445055451) (angle 90) (layer Edge.Cuts) (width 0.15))
-(gr_line (start 37.09815291264999 11.933196512048147) (end -8.590973569986351 8.548816772593604) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 131.3706541698408 -84.80576569951242) (end 141.18127729853177 -67.4485093949053) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 142.1732760350881 -64.34517010085528) (end 154.70974393296137 55.381264639643405) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 146.5647850999063 64.21216370152311) (end 86.00722816854099 62.78520086764095) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 84.6907393917396 62.644592034172376) (end 50.51997893065656 56.099595682339384) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 49.47143097297185 55.969796055598394) (end -11.621860274459651 52.47875084145945) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start -19.12150545167066 43.65430179087127) (end -16.043956406027394 14.417585857260235) (angle 90) (layer Edge.Cuts) (width 0.15))
 (gr_arc (start -8 -65.83965763333335) (end -8.883452 -73.79072753333335) (angle -83.65980951954216) (layer Edge.Cuts) (width 0.15))
 (gr_arc (start 35.96416074905664 -86.82302689433963) (end 36.84761274905664 -78.87195699433963) (angle -16.493463141609368) (layer Edge.Cuts) (width 0.15))
 (gr_arc (start 58.72178949033452 -79.04474162750928) (end 58.49965269033452 -87.04165702750929) (angle -21.242511441749556) (layer Edge.Cuts) (width 0.15))
 (gr_arc (start 124.40615167098693 -80.86930724363852) (end 131.37065417098694 -84.80576564363852) (angle -62.115249924056634) (layer Edge.Cuts) (width 0.15))
-(gr_arc (start 134.65504003125 -62.736658606250046) (end 142.24450633125 -65.26648100625005) (angle -11.040941621487995) (layer Edge.Cuts) (width 0.15))
-(gr_arc (start 166.22767305292388 31.981240458771595) (end 169.8417112529239 39.11837765877159) (angle -81.57862619499596) (layer Edge.Cuts) (width 0.15))
-(gr_arc (start 95.30111215833199 38.03808269111466) (end 98.25410735833199 30.60304269111466) (angle -4.526586522959562) (layer Edge.Cuts) (width 0.15))
-(gr_arc (start 36.50717934266365 19.91133850686397) (end 38.86417774266365 12.26643440686397) (angle -12.898644863135132) (layer Edge.Cuts) (width 0.15))
-(gr_arc (start -8 0.5706747777777776) (end -16 0.5706747777777776) (angle -85.76360456606085) (layer Edge.Cuts) (width 0.15))
-(gr_circle (center 166.3390615 32.5693802) (end 167.4390615 32.5693802) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 134.21677479967795 -63.512050939031354) (end 142.17327609967796 -64.34517013903135) (angle -23.498277712539707) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 146.75324269755123 56.21438380146765) (end 146.56478509755124 64.21216370146765) (angle -97.32746753617788) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 86.19568576618592 54.78742096758546) (end 84.69073936618592 62.64459196758546) (angle -9.493137418867036) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 49.015032556210244 63.9567667489263) (end 50.519978956210245 56.0995957489263) (angle -7.572501834394259) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start -11.165461857698055 44.49178014813155) (end -19.121505457698056 43.654301748131545) (angle -92.73851798036821) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start -24 13.580107499999997) (end -16.0439564 14.417585899999997) (angle -6.009006557293901) (layer Edge.Cuts) (width 0.15))
 
 )
 

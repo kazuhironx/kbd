@@ -76,8 +76,8 @@ points:
           row_net: R0
     thumb:
       anchor:
-        ref: matrix_inner_bottom
-        shift: [8, -22]
+        ref: matrix_outer_bottom
+        shift: [0, -30]
       key:
         padding: ky
         spread: kx
@@ -90,31 +90,31 @@ points:
             name: thumb_alt
             column_net: C0
             row_net: R4
-            width: 1.5
+            width: 2
             rotate: 0
-            shift: [43, -6]
+            shift: [30, 0]
         lower:
           key:
             name: thumb_lower
             column_net: C1
             row_net: R4
-            rotate: -10
-            shift: [23, -4]
+            rotate: -45
+            shift: [72, 4]
         main:
           key:
             name: thumb_ctrl
             column_net: C2
             row_net: R4
             width: 2
-            rotate: -17
-            shift: [0, 0]
+            rotate: -45
+            shift: [112, 8]
         fn:
           key:
             name: thumb_fn
             column_net: C3
             row_net: R4
-            rotate: -18
-            shift: [23, -25]
+            rotate: 0
+            shift: [-57, 0]
       rows:
         cluster:
 
@@ -131,6 +131,12 @@ outlines:
         - - key
           - "-/^mirror_/"
       size: [14, 14]
+  _wide_keys:
+    - what: rectangle
+      where:
+        - ref: thumb_alt
+        - ref: thumb_ctrl
+      size: [37, 18]
   _mounting_holes:
     - what: circle
       radius: screw_radius
@@ -159,30 +165,28 @@ outlines:
           shift: [board_margin + 26, board_margin + 8]
         - ref: matrix_symbol_top
           shift: [board_margin + 20, board_margin + 4]
-        - ref: thumb_alt
-          shift: [board_margin + 22, -board_margin - 16]
+        - ref: thumb_ctrl
+          shift: [board_margin + 26, -board_margin - 18]
         - ref: thumb_lower
           shift: [board_margin + 14, -board_margin - 22]
+        - ref: thumb_alt
+          shift: [board_margin + 12, -board_margin - 18]
         - ref: thumb_fn
-          shift: [board_margin + 8, -board_margin - 24]
-        - ref: thumb_ctrl
-          shift: [-board_margin - 26, -board_margin - 28]
-        - ref: matrix_ring_bottom
-          shift: [0, -board_margin - 8]
+          shift: [-board_margin - 12, -board_margin - 14]
         - ref: matrix_outer_bottom
-          shift: [-board_margin - 8, -board_margin]
+          shift: [-board_margin - 8, -board_margin - 6]
       fillet: 8
   board:
     - what: outline
       name: _raw
-    - what: outline
-      name: _mounting_holes
-      operation: subtract
   preview:
     - what: outline
       name: board
     - what: outline
       name: _keys
+      operation: subtract
+    - what: outline
+      name: _wide_keys
       operation: subtract
   bottom_plate:
     - what: outline

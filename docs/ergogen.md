@@ -30,7 +30,7 @@ Ergogenを物理レイアウトの一次情報にする。KiCadでは生成さ�
 
 - `Ctrl(2u)` と `Space(2u)` は左右対称運用を前提にする。
 - `Alt` は1.5u候補。`Ctrl+Alt+...` を親指で押しやすい位置を優先する。
-- ねじ穴は Ergogen outline の円形カットとして入れている。KiCadで最終穴径を確認する。
+- ねじ穴候補は `_mounting_holes` に残すが、レイアウト確認時のノイズを避けるため `board` からは一旦 subtract していない。KiCad配線段階で最終穴径と位置を戻す。
 - Ergogen標準footprintで不足が出た場合は、カスタムfootprint化する。Keebio RP2040 Pro Micro 16MBの最終フットプリントは実寸確認後に詰める。
 - QMK雛形は前段のビルド確認用で、まだRP2040/62キーの最終matrixには合わせていない。Ergogen配置確認後に更新する。
 - 公式Ergogenのpoint previewでは左右両側が表示されるため、`mirror.distance` は中央干渉が出ないよう広めの `96` にしている。左手PCB生成物はmirror点を除外している。
